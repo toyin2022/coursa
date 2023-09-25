@@ -1,0 +1,215 @@
+.header {
+  height: 17vh;
+  width: 99vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 4px 6px #00000043;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu_icon {
+  display: none;
+}
+.menu {
+  display: none;
+}
+.logo_container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.category {
+  cursor: pointer;
+  position: relative;
+}
+
+.category .categ {
+  position: absolute;
+  padding-left: 1rem;
+  padding-top: 3rem;
+  top: 3vh;
+  border-radius: 10px;
+  left: -4rem;
+  width: 18vw;
+  display: none;
+  z-index: 100;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  list-style: none;
+}
+.category .categ li {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.category:hover .categ {
+  display: block;
+}
+.search .searchBar {
+  padding: 1rem;
+  z-index: 101;
+  width: 30vw;
+  border-radius: 2rem;
+  background-color: #f2f2f2;
+  border: none;
+  border: 0.6px solid #000000c1;
+}
+.search input:focus {
+  border: none;
+  outline: none;
+  /* background-color: red; */
+  /* color: #fff; */
+}
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  justify-content: space-evenly;
+}
+.btns {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.btn {
+  border: 1px solid black;
+  padding: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.signup {
+  background-color: black;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    height: 17vh;
+    width: 99vw;
+    background-color: #fff;
+    box-shadow: 0 4px 6px #00000043;
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .logo_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .menu_icon {
+    display: block;
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+  }
+  .menu {
+    display: block;
+    position: absolute;
+    top: 17vh;
+    left: 0;
+    z-index: 100;
+  }
+  .menu .menu_category {
+    list-style: none;
+    background-color: #fff;
+    padding: 1.5rem;
+    transform: translateX(-500%);
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 6px #00000043;
+    border-bottom-right-radius: 16px;
+  }
+  .menu .menu_category.show {
+    transform: translateX(0%);
+  }
+  .menu .menu_category li {
+    margin-bottom: 6px;
+    box-shadow: 0 2px 4px #00000043;
+
+    padding: 1rem;
+  }
+  .menu_btns {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .menu_btn {
+    border: 1px solid black;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+  }
+  .category {
+    display: none;
+    /* position: relative; */
+  }
+
+  .search .searchBar {
+    padding: 1rem;
+    display: none;
+    width: 30vw;
+    border-radius: 2rem;
+    background-color: #f2f2f2;
+    border: none;
+    border: 0.6px solid #000000c1;
+  }
+  .search input:focus {
+    border: none;
+    outline: none;
+    /* background-color: red; */
+    /* color: #fff; */
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    justify-content: space-evenly;
+  }
+  .btns {
+    display: flex;
+    gap: 1rem;
+    display: none;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .btn {
+    border: 1px solid black;
+    padding: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .signup {
+    background-color: black;
+    color: white;
+  }
+}
